@@ -1,0 +1,8 @@
+total 11560
+drwxrwxr-x 2 shun shun     4096 May 17 20:14 dir1
+drwxrwxr-x 2 shun shun     4096 May 17 20:14 dir2
+-rw-rw-r-- 1 shun shun        0 May 17 23:08 home.txt
+-rwxrwxr-x 1 shun shun       72 May 17 22:55 if.sh
+-rwxrwxr-x 1 shun shun       49 May 17 00:35 myscript1
+-rwx--x--x 1 shun shun       91 May 17 00:32 script_f.sh
+-rw-rw-r-- 1 shun shun 11813133 May 17 00:33 sys
