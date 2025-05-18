@@ -1,15 +1,11 @@
 #!/bin/bash
-read -p "Enter your age: " age
 
-if [[ $age -lt 18 -a $age -ge 0 ]]
-then 
-	echo "you are young"
-elif [[ $age -eq 18 ]]
-then 
-	echo "you are same me"
-elif [[ $age -gt 18 -a $age -le 100 ]]
-then	
-	echo "you are senior"
+
+output="$(ping -c 3 $1)"
+#echo $output
+
+if [[ $output == *"100% packet loss"* ]];then
+	echo "the network connection to $1 is not working"
 else
-	echo "age not valid"
+	echo "the connectio to $1 is working"
 fi
