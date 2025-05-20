@@ -10,4 +10,4 @@ do
 	echo "Drop packets from ip $ip"
 	sudo iptables -I INPUT -s $ip -j DROP
 	sleep 0.5
-done < ./ips.txt
+done < <(cat ips.txt)
