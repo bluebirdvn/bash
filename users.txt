@@ -1,0 +1,3 @@
+john:managemnt
+tuan:programming
+tuan:engineering
