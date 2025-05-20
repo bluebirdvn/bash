@@ -1,14 +1,12 @@
 #!/bin/bash
-for os in Ubuntu Pop!_OS Slackware Kali "Mx Linux"
+for item in ./*
 do
-	echo "os is $os "
+	if [[ -f $item ]];then
+		echo "Display the content: "
+		sleep 1
+		cat $item
+		echo "##############"
+	fi
 done
-for num in {1..10..5}
-do 
-	echo "num is $num"
-	touch "./$num.txt"
-done
-
-
 
 
