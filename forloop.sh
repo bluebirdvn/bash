@@ -1,12 +1,5 @@
 #!/bin/bash
-for item in ./*
+for file in *.txt
 do
-	if [[ -f $item ]];then
-		echo "Display the content: "
-		sleep 1
-		cat $item
-		echo "##############"
-	fi
+	mv "$file" "rename_by_script_$file"
 done
-
-
